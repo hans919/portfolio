@@ -1,11 +1,11 @@
 {
   "personalInfo": {
-    "name": "Your Name",
+    "name": "Hans Christian Delos Santos",
     "email": "your.email@example.com",
     "profilePicture": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "resumePdf": "https://example.com/resume.pdf",
     "facebook": "https://facebook.com/yourprofile",
-    "github": "https://github.com/yourusername"
+    "github": "https://github.com/hans919"
   },
   "about": {
     "mainText": "I'm a software engineer specializing in frontend development with 2+ years of experience building web applications. I work with <strong>React</strong>, <strong>TypeScript</strong>, <strong> Tailwind CSS</strong> and <strong>Node.js</strong>. My main work includes developing features, improving user interfaces, testing, and fixing bugs. Currently expanding my skills in <strong> AWS</strong> and backend development with Node.js to become a full-stack developer.",
