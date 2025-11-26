@@ -1,0 +1,111 @@
+{
+  "personalInfo": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "profilePicture": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "resumePdf": "https://example.com/resume.pdf",
+    "facebook": "https://facebook.com/yourprofile",
+    "github": "https://github.com/yourusername"
+  },
+  "about": {
+    "mainText": "I'm a software engineer specializing in frontend development with 2+ years of experience building web applications. I work with <strong>React</strong>, <strong>TypeScript</strong>, <strong> Tailwind CSS</strong> and <strong>Node.js</strong>. My main work includes developing features, improving user interfaces, testing, and fixing bugs. Currently expanding my skills in <strong> AWS</strong> and backend development with Node.js to become a full-stack developer.",
+    "expandedText": "I'm passionate about continuous learning and staying updated with the latest web technologies. I thrive in collaborative environments where I can contribute ideas, solve complex problems, and build products that make a real impact. When I'm not coding, you'll find me at the gym, exploring the Philippines on my motorcycle, or learning from self-improvement content.",
+    "expertise": [
+      "React & Vue Expertise",
+      "TypeScript",
+      "Performance Optimization",
+      "Scalable Applications"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Event RSVP",
+      "description": "Online RSVP Tool",
+      "link": "https://example.com",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    },
+    {
+      "title": "Coffeelax",
+      "description": "Coffee Shop Menu",
+      "link": "https://example.com",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+    },
+    {
+      "title": "TimeAxis",
+      "description": "Daily Time Record System",
+      "link": "https://example.com",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+    },
+    {
+      "title": "Chods Digital Boost",
+      "description": "Digital Agency Website",
+      "link": "https://example.com",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Frontend Software Engineer",
+      "company": "Tech Company",
+      "period": "APR 2025 - PRESENT",
+      "type": "work"
+    },
+    {
+      "title": "Associate Software Engineer",
+      "company": "Innovation Company",
+      "period": "SEP 2023 - MAR 2025",
+      "type": "work"
+    },
+    {
+      "title": "Frontend Developer (Intern)",
+      "company": "Innovation Company",
+      "period": "MAR 2023 - MAY 2023",
+      "type": "work"
+    },
+    {
+      "title": "BS Information Technology",
+      "company": "University Name",
+      "period": "JUL 2019 - JUL 2023",
+      "type": "education"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Hackathon at Globe's Code to Career",
+      "description": "Awarded for exemplary teamwork, creativity, and technical excellence as a key member of the first-place winning team in Code-to-Career 2025.",
+      "link": "#"
+    },
+    {
+      "title": "Titanuim awardee Q3 2024",
+      "description": "Recognized as one of the most outstanding employees in the engineering department for exceptional performance and contributions during the third quarter of 2024.",
+      "link": "#"
+    }
+  ],
+  "techStack": [
+    { "name": "REACT", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "category": "Frontend" },
+    { "name": "NEXT.JS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", "category": "Frontend" },
+    { "name": "VUE", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg", "category": "Frontend" },
+    { "name": "NUXT.JS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg", "category": "Frontend" },
+    { "name": "TYPESCRIPT", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", "category": "Frontend" },
+    { "name": "JAVASCRIPT", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "category": "Frontend" },
+    { "name": "TAILWIND CSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", "category": "Frontend" },
+    { "name": "BOOTSTRAP", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", "category": "Frontend" },
+    { "name": "SCSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg", "category": "Frontend" },
+    { "name": "NODE.JS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", "category": "Backend" },
+    { "name": "MONGODB", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", "category": "Database" },
+    { "name": "MYSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", "category": "Database" },
+    { "name": "AMAZON RDS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg", "category": "Database" },
+    { "name": "SUPABASE", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg", "category": "Database" },
+    { "name": "AWS LAMBDA", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg", "category": "Backend" },
+    { "name": "API GATEWAY", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg", "category": "Backend" },
+    { "name": "DYNAMODB", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dynamodb/dynamodb-original.svg", "category": "Database" },
+    { "name": "AZURE DEVOPS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg", "category": "Tools" },
+    { "name": "GIT", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", "category": "Tools" },
+    { "name": "GITHUB", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", "category": "Tools" },
+    { "name": "JIRA", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg", "category": "Tools" },
+    { "name": "SLACK", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg", "category": "Tools" },
+    { "name": "TEAMS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftteams/microsoftteams-original.svg", "category": "Tools" },
+    { "name": "VS CODE", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", "category": "Tools" },
+    { "name": "VISUAL STUDIO", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg", "category": "Tools" }
+  ]
+}

@@ -1,0 +1,95 @@
+.certifications {
+  padding: 0;
+}
+
+.section-card {
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1.125rem;
+  border: 1px solid var(--border-color);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.section-header h2 svg {
+  color: var(--text-primary);
+  stroke: var(--text-primary);
+}
+
+.certifications-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.certification-card {
+  background: transparent;
+  padding: 0.75rem 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.2s ease;
+}
+
+.certification-card:last-child {
+  border-bottom: none;
+}
+
+.certification-card:hover {
+  background: var(--hover-bg);
+}
+
+.cert-icon {
+  display: none;
+}
+
+.cert-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+}
+
+.cert-content h3 {
+  font-size: 0.9375rem;
+  margin-bottom: 0.375rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cert-content p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size: 0.8125rem;
+}
+
+.cert-link {
+  color: #2563eb;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  transition: gap 0.2s ease;
+}
+
+.cert-link:hover {
+  gap: 0.5rem;
+}

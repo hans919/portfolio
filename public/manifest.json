@@ -1,0 +1,16 @@
+{
+  "name": "Portfolio Website",
+  "short_name": "Portfolio",
+  "description": "Personal portfolio website showcasing projects and experience",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
