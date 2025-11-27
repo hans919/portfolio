@@ -6,10 +6,12 @@ import Projects from './components/Projects'
 import TechStack from './components/TechStack'
 import Certifications from './components/Certifications'
 import Footer from './components/Footer'
+import CustomCursor from './components/CustomCursor'
 
 function App() {
   return (
     <div className="App">
+      <CustomCursor />
       <Sidebar />
       <main className="main-content">
         <div className="mobile-sidebar">
