@@ -4,26 +4,31 @@
 
 .section-card {
   background: var(--card-bg);
-  border-radius: 0.75rem;
-  padding: 1.125rem;
+  border-radius: 1rem;
+  padding: 1.25rem;
   border: 1px solid var(--border-color);
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
 }
 
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .section-header h2 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -0.015em;
 }
 
 .section-header h2 svg {
@@ -31,129 +36,78 @@
   stroke: var(--text-primary);
 }
 
-.filter-dropdown-container {
-  position: relative;
-  margin-bottom: 1.25rem;
-}
-
-.filter-dropdown-btn {
-  width: 100%;
-  padding: 0.625rem 1rem;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
+.view-all-link {
+  font-size: 0.875rem;
   color: var(--text-primary);
+  text-decoration: none;
   font-weight: 500;
-  font-size: 0.875rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   transition: all 0.2s ease;
 }
 
-body.dark-mode .filter-dropdown-btn {
-  color: #ffffff;
-  background: #1e293b;
-  border-color: #334155;
+.view-all-link:hover {
+  color: #000000;
 }
 
-.filter-dropdown-btn:hover {
-  border-color: var(--accent-color);
-  background: var(--hover-bg);
-}
-
-.filter-dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  margin-top: 0.25rem;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  z-index: 100;
-}
-
-body.dark-mode .filter-dropdown-menu {
-  background: #1e293b;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.filter-dropdown-item {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background: transparent;
-  border: none;
-  color: var(--text-primary);
-  font-weight: 400;
-  font-size: 0.875rem;
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.2s ease;
-  border-bottom: 1px solid var(--border-color);
-}
-
-body.dark-mode .filter-dropdown-item {
+body.dark-mode .view-all-link {
   color: #e2e8f0;
 }
 
-.filter-dropdown-item:last-child {
-  border-bottom: none;
+body.dark-mode .view-all-link:hover {
+  color: #ffffff;
 }
 
-.filter-dropdown-item:hover {
-  background: var(--hover-bg);
-  color: var(--accent-color);
+.tech-category {
+  margin-bottom: 1.5rem;
 }
 
-.filter-dropdown-item.active {
-  background: var(--accent-color);
-  color: white;
+.tech-category:last-child {
+  margin-bottom: 0;
 }
 
-body.dark-mode .filter-dropdown-item.active {
-  background: var(--accent-color);
+.category-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.875rem 0;
+  letter-spacing: -0.01em;
 }
 
-.filter-buttons {
-  display: none;
+body.dark-mode .category-title {
+  color: #f1f5f9;
 }
 
 .tech-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.625rem;
 }
 
 .tech-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0.875rem;
+  padding: 0.625rem 1rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  border-radius: 1.5rem;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  text-transform: uppercase;
+  border-radius: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-primary);
   transition: all 0.2s ease;
   cursor: pointer;
-  letter-spacing: 0.025em;
 }
 
 .tech-badge:hover {
   background: var(--hover-bg);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
+  border-color: #000000;
+  color: #000000;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
 }
 
 .tech-badge .tech-icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   flex-shrink: 0;
   display: flex;
@@ -161,20 +115,20 @@ body.dark-mode .filter-dropdown-item.active {
 }
 
 .tech-icon-fallback {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-color);
+  background: #000000;
   color: white;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 11px;
   flex-shrink: 0;
 }
 
 .tech-badge .tech-name {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 1;
 }

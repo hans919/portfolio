@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import { useData } from '../contexts/DataContext'
 import './TechStack.css'
 
 const TechStack = () => {
-  const [filter, setFilter] = useState('All')
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const { data } = useData()
   const technologies = data.techStack
 
@@ -19,17 +16,12 @@ const TechStack = () => {
     }
   }
 
-  const categories = ['All', 'Frontend', 'Backend & Databases', 'Cloud & DevOps', 'Tools & Platforms']
-
-  const filteredTech = filter === 'All' 
-    ? technologies 
-    : filter === 'Backend & Databases'
-    ? technologies.filter(tech => tech.category === 'Backend' || tech.category === 'Database')
-    : filter === 'Cloud & DevOps'
-    ? technologies.filter(tech => tech.category === 'Cloud' || tech.category === 'DevOps')
-    : filter === 'Tools & Platforms'
-    ? technologies.filter(tech => tech.category === 'Tools')
-    : technologies.filter(tech => tech.category === filter)
+  // Group technologies by category
+  const groupedTech: { [key: string]: typeof technologies } = {
+    'Frontend': technologies.filter(tech => tech.category === 'Frontend'),
+    'Backend': technologies.filter(tech => tech.category === 'Backend' || tech.category === 'Database'),
+    'DevOps & Cloud': technologies.filter(tech => tech.category === 'Cloud' || tech.category === 'DevOps' || tech.category === 'Tools')
+  }
 
   return (
     <section className="tech-stack" id="tech-stack">
@@ -41,50 +33,31 @@ const TechStack = () => {
             </svg>
             Tech Stack
           </h2>
+          <a href="#tech-stack" className="view-all-link">
+            View All →
+          </a>
         </div>
         
-        <div className="filter-dropdown-container">
-          <button 
-            className="filter-dropdown-btn" 
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          >
-            {filter}
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" style={{width: '16px', height: '16px', marginLeft: '8px'}}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-          </button>
-          
-          {isDropdownOpen && (
-            <div className="filter-dropdown-menu">
-              {categories.map(category => (
-                <button
-                  key={category}
-                  className={`filter-dropdown-item ${filter === category ? 'active' : ''}`}
-                  onClick={() => {
-                    setFilter(category)
-                    setIsDropdownOpen(false)
-                  }}
-                >
-                  {category}
-                </button>
-              ))}
+        {Object.entries(groupedTech).map(([category, techs]) => (
+          techs.length > 0 && (
+            <div key={category} className="tech-category">
+              <h3 className="category-title">{category}</h3>
+              <div className="tech-grid">
+                {techs.map((tech, index) => (
+                  <div key={`${tech.name}-${index}`} className="tech-badge">
+                    <img 
+                      src={tech.icon} 
+                      alt={tech.name} 
+                      className="tech-icon"
+                      onError={handleImageError}
+                    />
+                    <span className="tech-name">{tech.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          )}
-        </div>
-
-        <div className="tech-grid">
-          {filteredTech.map((tech, index) => (
-            <div key={`${tech.name}-${index}`} className="tech-badge">
-              <img 
-                src={tech.icon} 
-                alt={tech.name} 
-                className="tech-icon"
-                onError={handleImageError}
-              />
-              <span className="tech-name">{tech.name}</span>
-            </div>
-          ))}
-        </div>
+          )
+        ))}
       </div>
     </section>
   )

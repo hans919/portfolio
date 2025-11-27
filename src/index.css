@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #1e40af;
-  --text-primary: #1f2937;
+  --primary-color: #000000;
+  --secondary-color: #1f2937;
+  --text-primary: #000000;
   --text-secondary: #6b7280;
   --bg-primary: #ffffff;
-  --bg-secondary: #f9fafb;
+  --bg-secondary: #f8f9fa;
   --border-color: #e5e7eb;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -1px rgb(0 0 0 / 0.03);
   --sidebar-bg: #ffffff;
   --card-bg: #ffffff;
-  --hover-bg: #fafafa;
+  --hover-bg: #f8f9fa;
+  --accent-color: #000000;
 }
 
 body.dark-mode {

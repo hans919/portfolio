@@ -21,13 +21,13 @@ function App() {
           <div className="left-column">
             <About />
             <Experience />
-            <TechStack />
           </div>
           <div className="right-column">
             <Projects />
             <Certifications />
           </div>
         </div>
+        <TechStack />
         <Footer />
       </main>
     </div>

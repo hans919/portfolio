@@ -15,7 +15,7 @@ const Projects = () => {
             </svg>
             Recent Projects
           </h2>
-          <button className="read-more-link">Read More →</button>
+          <button className="read-more-link">View All →</button>
         </div>
         
         <div className="projects-list">
