@@ -53,14 +53,10 @@
   ],
   "certifications": [
     {
-      "title": "Hackathon at Globe's Code to Career",
-      "description": "Awarded for exemplary teamwork, creativity, and technical excellence as a key member of the first-place winning team in Code-to-Career 2025.",
-      "link": "#"
-    },
-    {
-      "title": "Titanium awardee Q3 2024",
-      "description": "Recognized as one of the most outstanding employees in the engineering department for exceptional performance and contributions during the third quarter of 2024.",
-      "link": "#"
+      "title": "Understanding Computer Ethics",
+      "description": "Certificate of Participation for actively participating in the webinar 'Understanding Computer Ethics: A guide to responsible computing' conducted by MMSU College of Computing and Information Sciences on April 17, 2025.",
+      "link": "#",
+      "image": "/computer-ethics-cert.png"
     }
   ],
   "techStack": [

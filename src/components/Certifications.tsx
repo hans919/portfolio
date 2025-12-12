@@ -1,9 +1,22 @@
+import { useState } from 'react'
 import { useData } from '../contexts/DataContext'
+import CertificateModal from './CertificateModal'
 import './Certifications.css'
 
 const Certifications = () => {
   const { data } = useData()
   const certifications = data.certifications
+  const [modalOpen, setModalOpen] = useState(false)
+  const [selectedCert, setSelectedCert] = useState<{ image: string; title: string } | null>(null)
+
+  const handleViewCertificate = (cert: { image?: string; title: string; link: string }) => {
+    if (cert.image) {
+      setSelectedCert({ image: cert.image, title: cert.title })
+      setModalOpen(true)
+    } else if (cert.link && cert.link !== '#') {
+      window.open(cert.link, '_blank')
+    }
+  }
 
   return (
     <section className="certifications" id="certifications">
@@ -28,14 +41,26 @@ const Certifications = () => {
               <div className="cert-content">
                 <h3>{cert.title}</h3>
                 <p>{cert.description}</p>
-                <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-link">
+                <button 
+                  onClick={() => handleViewCertificate(cert)} 
+                  className="cert-link"
+                >
                   View Certificate →
-                </a>
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {selectedCert && (
+        <CertificateModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          imageUrl={selectedCert.image}
+          title={selectedCert.title}
+        />
+      )}
     </section>
   )
 }
