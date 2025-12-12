@@ -1,0 +1,358 @@
+.github-stats {
+  padding: 0;
+  max-width: 1400px;
+  margin: 0 auto 1rem;
+}
+
+.github-stats .section-card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.github-stats .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.github-stats .section-header h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+.github-stats .section-header h2 svg {
+  fill: var(--text-primary);
+}
+
+.github-stats .read-more-link {
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.dark-mode .github-stats .read-more-link {
+  color: #ffffff;
+}
+
+.github-stats .read-more-link:hover {
+  transform: translateX(3px);
+  text-decoration: underline;
+}
+
+.github-stats-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.github-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  transition: all 0.2s ease;
+}
+
+.github-card:hover {
+  border-color: #000000;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.dark-mode .github-card:hover {
+  border-color: #818cf8;
+}
+
+.github-stats-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Light/Dark mode image toggle */
+.light-mode-img {
+  display: block;
+}
+
+.dark-mode-img {
+  display: none;
+}
+
+.dark-mode .light-mode-img {
+  display: none;
+}
+
+.dark-mode .dark-mode-img {
+  display: block;
+}
+
+.languages-card {
+  min-height: 120px;
+}
+
+.github-contribution-graph {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-x: auto;
+  transition: all 0.2s ease;
+}
+
+.github-contribution-graph:hover {
+  border-color: #000000;
+}
+
+.dark-mode .github-contribution-graph:hover {
+  border-color: #818cf8;
+}
+
+.contribution-graph {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  border-radius: 0.5rem;
+}
+
+/* Dark mode contribution graph - invert the white background */
+.dark-mode .contribution-graph.dark-mode-img {
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
+}
+
+@media (max-width: 768px) {
+  .github-stats-content {
+    grid-template-columns: 1fr;
+  }
+
+  .github-card {
+    padding: 0.75rem;
+    min-height: auto;
+    overflow-x: auto;
+  }
+
+  .github-stats-img {
+    min-width: 280px;
+  }
+
+  .github-contribution-graph {
+    padding: 0.75rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .contribution-graph {
+    min-width: 700px;
+    min-height: 80px;
+  }
+}
+
+/* Top Technologies Custom Card */
+.top-technologies {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1.25rem;
+  min-height: auto;
+}
+
+.tech-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tech-badge:hover {
+  background: var(--hover-bg);
+  border-color: #000000;
+  color: #000000;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Framework-specific icon colors */
+.tech-badge.laravel .tech-icon {
+  color: #FF2D20;
+}
+
+.tech-badge.react .tech-icon {
+  color: #61DAFB;
+}
+
+.tech-badge.php .tech-icon {
+  color: #777BB4;
+}
+
+.tech-badge.javascript .tech-icon {
+  color: #F7DF1E;
+}
+
+.tech-badge.typescript .tech-icon {
+  color: #3178C6;
+}
+
+.tech-badge.mysql .tech-icon {
+  color: #4479A1;
+}
+
+.tech-name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.tech-level {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Dark mode adjustments for tech badges */
+.dark-mode .tech-badge {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+.dark-mode .tech-badge:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .tech-level {
+  background: var(--card-bg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tech-badges {
+    gap: 0.5rem;
+  }
+
+  .tech-badge {
+    padding: 0.4rem 0.75rem;
+    min-width: auto;
+    flex: 0 1 auto;
+  }
+
+  .tech-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .tech-name {
+    font-size: 0.75rem;
+  }
+
+  .tech-level {
+    display: none;
+  }
+
+  .top-technologies {
+    padding: 1rem;
+  }
+
+  .tech-card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .github-stats .section-card {
+    padding: 1rem;
+  }
+
+  .github-stats .section-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .github-stats .section-header h2 {
+    font-size: 1rem;
+  }
+
+  .github-stats .read-more-link {
+    font-size: 0.75rem;
+  }
+
+  .github-stats-content {
+    gap: 0.75rem;
+  }
+
+  .tech-badge {
+    padding: 0.35rem 0.5rem;
+    min-width: 90px;
+  }
+
+  .tech-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tech-name {
+    font-size: 0.7rem;
+  }
+
+  .tech-level {
+    font-size: 0.55rem;
+  }
+}

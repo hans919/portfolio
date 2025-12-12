@@ -5,6 +5,7 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import TechStack from './components/TechStack'
 import Certifications from './components/Certifications'
+import GitHubStats from './components/GitHubStats'
 import Footer from './components/Footer'
 import CustomCursor from './components/CustomCursor'
 
@@ -28,6 +29,7 @@ function App() {
           </div>
         </div>
         <TechStack />
+        <GitHubStats />
         <Footer />
       </main>
     </div>

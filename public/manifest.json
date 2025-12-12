@@ -1,16 +1,27 @@
 {
-  "name": "Portfolio Website",
-  "short_name": "Portfolio",
-  "description": "Personal portfolio website showcasing projects and experience",
+  "name": "Hans Christian Delos Santos - Portfolio",
+  "short_name": "Hans Portfolio",
+  "description": "Software Engineer portfolio showcasing projects, skills, and experience in Laravel, React, and full-stack development",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#3b82f6",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["portfolio", "business", "productivity"],
   "icons": [
     {
-      "src": "/vite.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "/hansul.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/hansul.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
     }
   ]
 }
